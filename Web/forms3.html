@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Forms 3</title>
+  </head>
+  <body>
+    <form action="handle-upload.html">
+      <label for="after">Before image:
+        <input type="file" name="before" id="before">
+      </label>
+      <br>
+      <label for="befDesc">Before image description:
+        <input type="text" name="befDesc" id="befDesc">
+      </label>
+      <br>
+      <label for="after">After image:
+        <input type="file" name="after" id="after">
+      </label>
+      <br>
+      <label for="aftDesc">After image description:
+        <input type="text" name="aftDesc" id="aftDesc">
+      </label>
+      <br>
+      <br>
+      <input type="submit" name="Send" id="send" value="Send">
+    </form>
+    <hr>
+    <form action="handle-upload.html">
+      <label for="radio"> Radio:
+        <input type="radio" name="radio" value="option1">Option 1
+        <input type="radio" name="radio" value="option2">Option 2
+        <input type="radio" name="radio" value="option3">Option 3
+        <input type="radio" name="radio" value="option4">Option 4
+        <input type="radio" name="radio" value="option5">Option 5
+      </label>
+      <br>
+      <label for="checkbox">Checkbox:
+        <input type="checkbox" name="checkbox" id="checkbox">Option 1
+        <input type="checkbox" name="checkbox" id="checkbox">Option 2
+        <input type="checkbox" name="checkbox" id="checkbox">Option 3
+      </label>
+      <br>
+      <label for="email">Email:
+        <input type="email" name="email" id="email">
+      </label>
+      <br>
+      <label for="date">
+        <input type="date" name="date" id="date">
+      </label>
+      <br>
+      <input type="reset" value="Reset">
+      <br>
+      <input type="image" src="images/submit.png" width="90" name="send" id="send">
+    </form>
+  </body>
+</html>
