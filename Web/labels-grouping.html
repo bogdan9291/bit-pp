@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labels grouping</title>
+</head>
+<body>
+  <form action="labels-grouping-success.html">
+    <fieldset>
+      <legend>Personal data</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Full name" required>
+      <br>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="yourmail@example.com" required>
+      <br>
+      <br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Location</legend>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" required>
+      <br>
+      <br>
+      <label for="street">Street:</label>
+      <input type="text" id="street" required>
+      <br>
+      <br>
+      <label for="strNum">Street number:</label>
+      <input type="number" required>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Event info</legend>
+
+      <label for="eventType">Event type:</label>
+      <select name="eventType" id="eventType" required>
+        <option value="birthday">Birthday</option>
+        <option value="wedding" selected>Wedding</option>
+        <option value="company">Company</option>
+      </select>
+      <br>
+      <br>
+      <label for="guestNum">Number of guests:</label>
+      <input type="number" min="5" max="300" placeholder="300" required>
+    </fieldset>
+    <br>
+    <br>
+    <input type="submit">
+  </form>
+</body>
+</html>
