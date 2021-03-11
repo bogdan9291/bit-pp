@@ -6,7 +6,7 @@
 // larger. Result should be
 // displayed in the console.
 
-var a = 5;
+var a = 66;
 var b = 21;
 
 if (a > b) {
