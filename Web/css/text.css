@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Roboto:ital,wght@0,900;1,900&display=swap');
+
+@font-face {
+  font-family: Pangolin;
+  src: url(../fonts/Pangolin-Regular.ttf);
+}
+
+body {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+.p1 {
+  font-family: Pangolin, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.p2 {
+  font-family: Chango, sans-serif;
+  font-style: oblique;
+}
+
+.p3 {
+  font-family: 'Syne Mono', sans-serif;
+}
+
+.p1 q {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.p2 q {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+.p3 q {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.p3 span {
+  font-weight: bold;
+  font-style: italic;
+}
