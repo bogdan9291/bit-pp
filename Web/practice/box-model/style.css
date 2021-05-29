@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  color: navy;
+  background-color: #eee;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 26pt;
+  font-variant: small-caps;
+  text-align: right;
+  background-color: navy;
+  color: #ccf;
+  padding: 4px 10px;
+  margin-top: 0;
+  border-top: 8px solid #88c;
+  border-bottom: 8px solid #88c;
+}
+
+p {
+  width: 80%;
+  margin: 0 auto 16px auto;
+  border-left: 10px solid #88c;
+  padding-left: 10px;
+}
+
+.asside {
+  width: 300px;
+  margin-left: auto;
+  margin-right: 5px;
+  padding: 16px;
+  font-size: 80%;
+  border: 1px solid red;
+  border-width: 2px 4px 5px 2px;
+  background-color: #ffffdd;
+}
+
+#podnaslov {
+  border-bottom: 5px dotted #88d;
+  width: 90%;
+  margin: 0 auto 10px auto;
+}
+
+#podnaslov h2 {
+  margin: 0;
+}
+
+table {
+  margin: 16px auto 16px auto;
+  border: 4px solid #000;
+  background-color: #fde;
+}
+
+table td {
+  border: 1px solid #000;
+}

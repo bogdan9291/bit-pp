@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+}
+
+img {
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+header p {
+  margin: 0;
+}
+
+.name {
+  padding-top: 2px;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.about {
+  width: 40%;
+  display: inline-block;
+  border-right: 1px solid #000;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.articles {
+  width: 50%;
+  display: inline-block;
+  padding: 10px;
+}

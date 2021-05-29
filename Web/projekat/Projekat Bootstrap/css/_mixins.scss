@@ -1,0 +1,30 @@
+@mixin decor($color) {
+  .decor {
+    width: 100%;
+    text-align: center;
+
+    i {
+      color: $color;
+      margin: 0 4px;
+    }
+
+    .line {
+      display: inline-block;
+      height: 20px;
+      width: 70px;
+      border-bottom: 4px solid $color;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+@mixin heading($color) {
+  font-size: 40px;
+  color: $color;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+@mixin sectionPadding() {
+  padding: 30px 0;
+}

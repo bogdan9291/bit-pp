@@ -1,0 +1,12 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.div1 {
+  p {
+    @include textShadow(3px, 5px, 4px, $black);
+  }
+}
+
+.div2 {
+  @include boxShadow(7px, 7px, 5px, 0, $black);
+}

@@ -1,0 +1,9 @@
+@mixin textShadow($angle, $distance, $blur, $color) {
+  text-shadow: $angle $distance $blur $color;
+}
+
+@mixin boxShadow($angle, $distance, $blur, $spread, $color) {
+  -webkit-box-shadow: $angle $distance $blur $spread $color;
+  -moz-box-shadow: $angle $distance $blur $spread $color;
+  box-shadow: $angle $distance $blur $spread $color;
+}

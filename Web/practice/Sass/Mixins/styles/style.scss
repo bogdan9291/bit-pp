@@ -1,0 +1,21 @@
+$black: rgba(150, 150, 150, 1);
+
+@mixin textShadow($angle, $distance, $blur, $color) {
+  text-shadow: $angle $distance $blur $color;
+}
+
+@mixin boxShadow($angle, $distance, $blur, $spread, $color) {
+  -webkit-box-shadow: $angle $distance $blur $spread $color;
+  -moz-box-shadow: $angle $distance $blur $spread $color;
+  box-shadow: $angle $distance $blur $spread $color;
+}
+
+.div1 {
+  p {
+    @include textShadow(3px, 5px, 4px, $black);
+  }
+}
+
+.div2 {
+  @include boxShadow(7px, 7px, 5px, 0, $black);
+}

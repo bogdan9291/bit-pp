@@ -1,0 +1,247 @@
+.contact {
+  padding: 30px 0;
+}
+.contact h1 {
+  font-size: 40px;
+}
+.contact .decor {
+  width: 100%;
+  text-align: center;
+}
+.contact .decor i {
+  color: #2c3e50;
+  margin: 0 4px;
+}
+.contact .decor .line {
+  display: inline-block;
+  height: 20px;
+  width: 70px;
+  border-bottom: 4px solid #2c3e50;
+  margin-bottom: 4px;
+}
+.contact form {
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #969494;
+}
+.contact form label {
+  margin-top: 15px;
+}
+.contact form input,
+.contact form textarea {
+  border: none;
+  border-bottom: 1px solid #969494;
+}
+.contact form textarea {
+  width: 100%;
+  height: 250px;
+}
+.contact form input[type=submit] {
+  display: block;
+  width: 100px;
+  background-color: #18bc9c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+.contact form .fa-stack {
+  font-size: 3em;
+}
+.contact form .icons i {
+  vertical-align: middle;
+}
+
+.navbar-dark {
+  background-color: #2c3e50;
+}
+.navbar-dark .navbar-brand {
+  color: #fff;
+}
+.navbar-dark .navbar-toggler,
+.navbar-dark .button {
+  background-color: #18bc9c;
+  color: #fff !important;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-dark .navbar-toggler,
+.navbar-dark .button {
+    background-color: transparent;
+    color: #fff !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar-dark .navbar-nav {
+    margin-left: auto;
+  }
+}
+
+* {
+  font-family: "LatoBlack";
+}
+
+@font-face {
+  font-family: LatoBlack;
+  src: url(../fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: LatoRegular;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+main {
+  text-align: center;
+}
+main .hero {
+  background-color: #18bc9c;
+  color: #fff;
+  padding: 50px 0;
+}
+main .hero h1 {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+main .hero .decor {
+  width: 100%;
+  text-align: center;
+}
+main .hero .decor i {
+  color: #fff;
+  margin: 0 4px;
+}
+main .hero .decor .line {
+  display: inline-block;
+  height: 20px;
+  width: 70px;
+  border-bottom: 4px solid #fff;
+  margin-bottom: 4px;
+}
+main .hero p {
+  padding: 0 10px;
+  margin-top: 15px;
+}
+main .portfolio {
+  padding: 30px 0;
+}
+main .portfolio h1 {
+  font-size: 40px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+main .portfolio img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+main .portfolio .decor {
+  margin-bottom: 20px;
+}
+main .portfolio .decor {
+  width: 100%;
+  text-align: center;
+}
+main .portfolio .decor i {
+  color: #2c3e50;
+  margin: 0 4px;
+}
+main .portfolio .decor .line {
+  display: inline-block;
+  height: 20px;
+  width: 70px;
+  border-bottom: 4px solid #2c3e50;
+  margin-bottom: 4px;
+}
+main .about {
+  background-color: #18bc9c;
+  padding: 30px 0;
+}
+main .about .decor {
+  width: 100%;
+  text-align: center;
+}
+main .about .decor i {
+  color: #fff;
+  margin: 0 4px;
+}
+main .about .decor .line {
+  display: inline-block;
+  height: 20px;
+  width: 70px;
+  border-bottom: 4px solid #fff;
+  margin-bottom: 4px;
+}
+main .about .decor {
+  margin-bottom: 20px;
+}
+main .about h1 {
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+main .about p {
+  color: #fff;
+  text-align: left;
+  font-family: "LatoRegular";
+}
+main .about a {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-family: "LatoRegular";
+}
+main .about a i {
+  margin-right: 5px;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+footer h4 {
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+footer .icons {
+  margin-top: 30px;
+}
+footer p {
+  font-family: "LatoRegular";
+}
+footer .copy {
+  text-align: center;
+  margin-top: 20px;
+}
+footer .copy p {
+  font-size: 14px;
+  margin: 0;
+}
+footer .copy p:last-child {
+  color: #999;
+}
+
+.returnToTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+.returnToTop a {
+  text-decoration: none;
+}
+.returnToTop a #circle {
+  color: #2c3e50;
+}
+.returnToTop a #chevron {
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

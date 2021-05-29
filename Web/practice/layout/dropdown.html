@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dropdown</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    nav {
+      background-color: #ffb504;
+      padding: 10px;
+    }
+
+    nav::before,
+    nav::after {
+      display: table;
+      content: "";
+    }
+
+    nav::after {
+      clear: both;
+    }
+
+    ul {
+      list-style: none;
+      padding-inline-start: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      color: #fff;
+    }
+
+    li:hover {
+      background-color: #e3e3e3;
+      color: #000;
+    }
+
+    li:hover a {
+      color: #000;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 10px;
+    }
+
+    .dropdown {
+      position: relative;
+      padding: 10px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 38px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      background-color: #e1e1e1;
+      margin-left: -10px;
+    }
+
+    .dropdown-content a {
+      padding: 10px;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #eee;
+    }
+
+  </style>
+</head>
+<body>
+  <nav> 
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">Menu 1
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

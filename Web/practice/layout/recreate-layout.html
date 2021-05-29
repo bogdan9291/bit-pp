@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recreate layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .body,
+    main,
+    header  {
+      width: 960px;
+      margin: 0 auto;
+    }
+
+    footer {
+      height: 50px;
+      background-color: #2d3e50;
+      color: #fff;
+      padding: 3px 0;
+    }
+
+    ul {
+      list-style: none;
+      float: right;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+    }
+
+    nav {
+      background-color: #c8352f ;
+    }
+
+    nav::before,
+    nav::after {
+      display: table;
+      content: "";
+    }
+
+    nav::after {
+      clear: both;
+    }
+
+    img {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .articles {
+      padding: 5px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    article {
+      display: inline-block;
+      width: 30%;
+      margin: 0 10px;
+      text-align: left;
+    }
+
+    asside {
+      background-color: #ffBe00;
+      padding: 5px;
+      float: right;
+    }
+
+    asside p {
+      border-bottom: 1px solid #000;
+    }
+
+    .articles:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <img src="../../images/css3-html5.jpg" alt="alt">
+    
+    <div class="articles">
+      <article>
+        <img src="https://via.placeholder.com/300x200/C1392B/" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eos commodi tempora? Odio vero perspiciatis numquam sed! Obcaecati vitae debitis nam dolore ab nostrum? Labore rem ducimus debitis eius ipsum!</p>
+      </article>
+  
+      <article>
+        <img src="https://via.placeholder.com/300x200/C1392B/" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eos commodi tempora? Odio vero perspiciatis numquam sed! Obcaecati vitae debitis nam dolore ab nostrum? Labore rem ducimus debitis eius ipsum!</p>
+      </article>
+
+      <asside>
+        <p>Rebuilding slack.com</p>
+        <p>Zasto bootcamo format?</p>
+        <p>React - prozor u svet web aplikacija</p>
+        <p>Najvece zablude o programerima u Srbiji</p>
+      </asside>
+  
+      <article>
+        <img src="https://via.placeholder.com/300x200/C1392B/" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eos commodi tempora? Odio vero perspiciatis numquam sed! Obcaecati vitae debitis nam dolore ab nostrum? Labore rem ducimus debitis eius ipsum!</p>
+      </article>
+  
+      <article>
+        <img src="https://via.placeholder.com/300x200/C1392B/" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eos commodi tempora? Odio vero perspiciatis numquam sed! Obcaecati vitae debitis nam dolore ab nostrum? Labore rem ducimus debitis eius ipsum!</p>
+      </article>
+  
+      <article>
+        <img src="https://via.placeholder.com/300x200/C1392B/" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eos commodi tempora? Odio vero perspiciatis numquam sed! Obcaecati vitae debitis nam dolore ab nostrum? Labore rem ducimus debitis eius ipsum!</p>
+      </article>
+
+      <article>
+        <img src="https://via.placeholder.com/300x200/C1392B/" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eos commodi tempora? Odio vero perspiciatis numquam sed! Obcaecati vitae debitis nam dolore ab nostrum? Labore rem ducimus debitis eius ipsum!</p>
+      </article>
+
+      <article>
+        <img src="https://via.placeholder.com/300x200/C1392B/" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eos commodi tempora? Odio vero perspiciatis numquam sed! Obcaecati vitae debitis nam dolore ab nostrum? Labore rem ducimus debitis eius ipsum!</p>
+      </article>
+
+      <article>
+        <img src="https://via.placeholder.com/300x200/C1392B/" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam eos commodi tempora? Odio vero perspiciatis numquam sed! Obcaecati vitae debitis nam dolore ab nostrum? Labore rem ducimus debitis eius ipsum!</p>
+      </article>
+
+    </div>
+  </main>
+  <footer>
+    <div class="body">
+      <p>&#169; BITStudent</p>
+    </div>
+  </footer>
+</body>
+</html>

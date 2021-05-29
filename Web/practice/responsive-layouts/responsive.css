@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.logo h1 {
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #428bca;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 33%;
+  display: inline-block;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.border {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+@media screen and (min-width: 414px) {
+  .container {
+    width: 100%;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-container img,
+  .flex-container nav {
+    margin-bottom: 10px;
+  }
+
+  .flex-container .logo {
+    text-align: center;
+    order: 1;
+  }
+
+  .flex-container nav {
+    order: 3;
+  }
+
+  .flex-container img {
+    order: 2;
+  }
+
+  ul {
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+
+  ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  ul li:hover {
+    background-color: #428bca;
+    border-radius: 5px;
+  }
+
+  ul li:hover a {
+    color: #fff;
+  }
+
+  ul li:first-child,
+  ul li:nth-child(2) {
+    border-bottom: 1px solid #eee;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    text-align: center;
+  }
+
+  .border {
+    padding: 10px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .flex-container {
+    display: block;
+  }
+
+  .logo {
+    text-align: left;
+    display: inline-block;
+    font-size: 22px;
+    clear: both;
+    margin-left: 20px;
+  }
+
+  nav {
+    display: inline;
+  }
+
+  ul {
+    float: right;
+    border: none;
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+
+  ul li:first-child,
+  ul li:nth-child(2) {
+    border-bottom: none;
+  }
+
+  ul li {
+    display: inline;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+    border: none;
+  }
+
+  ul li a {
+    padding: 10px 15px;
+  }
+
+  ul li:hover {
+    background-color: #428bca;
+    border-radius: 5px;
+  }
+
+  ul li:hover a {
+    color: #fff;
+  }
+
+  img {
+    clear: both;
+  }
+
+  .card img {
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .card p {
+    padding: 5px;
+    overflow: hidden;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .container {
+    width: 60%;
+    margin: auto;
+  }
+
+  .card p {
+    padding: 30px 10px;
+  }
+
+}
