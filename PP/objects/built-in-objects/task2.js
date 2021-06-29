@@ -4,22 +4,20 @@
 
 var array = [8, 13, 8, 9, 12, 12, 8, 8, 16, 1, 1, 4, 13];
 
-var removeDuplicates = function(arr) {
-  var sortedArray = arr.sort();
+var removeDuplicates = function (arr) {
+  var sortedArray = arr.sort(function (a, b) {
+    return a - b;
+  });
   var newArray = [];
-  for(var i = 0; i < sortedArray.length; i++) {
-
-    if(sortedArray[i] !== sortedArray[i - 1]) {
-        newArray.push(sortedArray[i]);
+  for (var i = 0; i < sortedArray.length; i++) {
+    if (sortedArray[i] !== sortedArray[i - 1]) {
+      newArray.push(sortedArray[i]);
     } else {
       continue;
     }
-    
   }
-  newArray.sort(function(a,b){
-    return a-b;
-  });
+
   return newArray;
-}
+};
 
 console.log(removeDuplicates(array));

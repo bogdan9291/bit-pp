@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      button {
+        position: absolute;
+        top: 520px;
+        left: 5px;
+      }
+
+      #field {
+        position: relative;
+        width: 800px;
+        height: auto;
+      }
+
+      #player {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        transform: translate3d(50px, 50px, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="field.png" alt="player" id="field" />
+
+    <img src="player.png" alt="player" id="player" width="50px" height="auto" />
+
+    <button type="button" id="disable">Disable</button>
+
+    <script>
+      var player = document.querySelector("#player");
+      var field = document.querySelector("#field");
+      var disabled = document.querySelector("#disable");
+      field.addEventListener("click", getClickPosition, false);
+      var turnOn = true;
+
+      function disable() {
+        if (turnOn) {
+          field.removeEventListener("click", getClickPosition);
+          turnOn = false;
+          disabled.innerHTML = "Enable";
+        } else {
+          field.addEventListener("click", getClickPosition, false);
+          turnOn = true;
+          disabled.innerHTML = "Disable";
+        }
+      }
+
+      disabled.addEventListener("click", disable);
+
+      function getClickPosition(event) {
+        var xPosition = event.clientX - player.offsetWidth / 2;
+        var yPosition = event.clientY - player.offsetHeight / 2;
+
+        var translate3dValue =
+          "translate3d(" + xPosition + "px," + yPosition + "px, 0)";
+        player.style.transform = translate3dValue;
+      }
+    </script>
+  </body>
+</html>

@@ -5,7 +5,7 @@
 var array = [1, 2, 9, 2, 1];
 
 function oddOrNo(arr) {
-  if(arr.length % 2 === 0) {
+  if (arr.length % 2 === 0) {
     return false;
   } else {
     return true;
@@ -13,5 +13,3 @@ function oddOrNo(arr) {
 }
 
 console.log(oddOrNo(array));
-
-

@@ -1,0 +1,22 @@
+.blue {
+  background-color: #2d3e4f;
+}
+
+.red {
+  background-color: #c1392b;
+}
+
+.bgChange,
+.turnOff {
+  background-color: #c1392b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.turnOff {
+  background-color: yellow;
+  color: #000;
+  border: 1px solid #000;
+}
