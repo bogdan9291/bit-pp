@@ -1,0 +1,23 @@
+body {
+  background-color: #eee;
+  text-align: center;
+  h1,
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  text-align: left;
+  .row {
+    padding: 10px;
+  }
+}
+
+button {
+  width: 100%;
+}

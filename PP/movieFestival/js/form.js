@@ -13,10 +13,25 @@ var $programDate = document.querySelector("#date");
 var $createProgram = document.querySelector("#createProgram");
 var $programsList = document.querySelector("#programsList");
 
+function resetMovieForm() {
+  $movieTitle.value = "";
+  $movieLength.value = "";
+}
+
+function renderMovieList(movies) {
+  var list = "";
+
+  movies.forEach(function (movie) {
+    list += "<li>" + movie.getData() + "</li>";
+  });
+
+  $movieList.innerHTML = list;
+}
+
 var createMovie = function () {
   // Get form input value for create movie
   var title = $movieTitle.value;
-  var length = $movieLength.value;
+  var length = Number.parseInt($movieLength.value);
   var genre = $movieGenre.value;
 
   // Error handling for missing movie title info
@@ -36,14 +51,16 @@ var createMovie = function () {
   console.log(newMovie);
 
   // Add movie data to movie list
-  $movieList.innerHTML += "<li>" + newMovie.getData() + "</li>";
+  renderMovieList(createdMovieList);
+  // Reset form
+  resetMovieForm();
 };
 
 var createProgram = function () {
   var date = document.querySelector("#date").value;
   var numOfMovies = createdMovieList.length;
 
-  var newProgram = new Program(date, createdMovieList);
+  var newProgram = new Program(date);
   console.log(newProgram);
 
   $programsList.innerHTML += "<li>" + newProgram.getData() + "</li>";

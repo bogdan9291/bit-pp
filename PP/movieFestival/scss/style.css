@@ -1,0 +1,23 @@
+body {
+  background-color: #eee;
+  text-align: center;
+}
+body h1,
+body h2 {
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  text-align: left;
+}
+section .row {
+  padding: 10px;
+}
+
+button {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

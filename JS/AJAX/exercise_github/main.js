@@ -3,6 +3,8 @@ const errorElement = $(".alert");
 const url = "https://api.github.com/search/users?q=";
 const cardHolder = $(".cardHolder");
 
+const repoCardHolder = $(".repoCardHolder");
+
 $(document).ready(function () {
   search("a");
 });
@@ -27,7 +29,25 @@ function search(inputValue) {
             </div>
             </div>
             </div>`);
+
         cardHolder.append(card);
+
+        $(".card img").click(function () {
+          window.location.href = "user.html";
+
+          var repoUrl = "https://api.github.com/users" + item.login + "/repos";
+
+          $.ajax({
+            url: repoUrl,
+            method: "GET",
+          }).done(function (response) {
+            response.items.forEach(function (item) {
+              var repoCard = `<h2>${item.name}</h2>`;
+
+              repoCardHolder.append(repoCard);
+            });
+          });
+        });
       });
     })
     .fail(function () {
