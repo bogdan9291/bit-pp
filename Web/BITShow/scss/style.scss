@@ -5,6 +5,9 @@ main {
   .cardHolder {
     .card {
       margin-top: 15px;
+      &:hover {
+        cursor: pointer;
+      }
       .card-body {
         overflow: hidden;
         text-align: center;
